@@ -1,0 +1,70 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+    \title{Modeling and Observing ProtoDigital Twin with ROS2 and Omniverse}
+    \author{\IEEEauthorblockN{Alican Tüzün\\ and Montgomery Scott} 
+    \IEEEauthorblockA{Starfleet Academy\\ San Francisco, California 966782391\\ Telephone: (800) 555--1212\\ Fax: (888) 555--1212}}
+    
+    \maketitle
+
+    \begin{abstract}
+        Digital twins are becoming more and more important for the efficient and effective development and operation of cyber-physical systems.
+        However, digital twins are only useful if they reflect the real-world system accurately enough, i.e.their quality is high enough. 
+        This claim entails the question, of what the term quality in the context of digital twins means and how it can be measured. 
+        In this article, we present our experience with the quality assurance of a digital twin for an assembly line in the automotive industry.
+        We explain our preliminary definition of digital twin quality, which we derive from classical quality models for general software systems. 
+        Furthermore, we describe quality issues, which we were able to detect in a digital twin of an assembly line in the automotive industry. \
+        Finally, we conclude how to leverage our experience in different contexts and how to generalize the underlying approaches.
+    \end{abstract}
+
+    \section{Introduction}\label{section:introduction}
+    As new and complex technologies advance to emerge, it becomes progressively difficult to understand and define their core concepts. 
+    One of the significant current examples in the area of digitalization is the concept of digital twins, which has resulted in numerous definitions,
+    that vary from one derivation to another. Because, even though the terms "digital" and "twin" are easy to grasp,  their consolidation develops a new challenging concept,
+    which might be resulted in misunderstanding and misapplication.
+    Therefore, a practical example of a proto, easy-to-model example of the digital twin prototype and instance can significantly improve 
+    the understanding of the notion of the digital twin.\cite{QualityandCompetitionanEssayinEconomicTheory}
+    
+    The idea of the digital twin was proposed in 2002 by the Grieves,
+    as an ideal form of product life cycle management.
+    The proposal was to create a co-existed information twin of a real system to gather new information to minimize the system needs and waste,
+    such as material, time, and energy. It should be noted that initially this concept was called the mirrored spaced model, and later the information mirroring model(IMM).
+    IMM had all the components of today's digital twins: a real system, a virtual system,  a connection between them, and additionally the virtual simulation. 
+    However, after co-authoring with Vickers in 2010, the term 'digital twin' was adopted and Grieves simplified the model by excluding the virtual simulation component.
+    
+    There has been a considerable amount of literature has been published on Digital Twins, 
+    however, to date, even though Grieves already gave the definition, there has been little agreement on the precise definition and application. 
+    Numerous authors have considered different definitions, including digital twins as a multi-physics environment 1, an equivalent to a product 2, 
+    a digital copy 3, a cyber component of a Cyber-Physical System 4, a controlling and monitoring unit 5, and many more 6. However, if inspected carefully, 
+    most of these not only don't coincide with Grieves's definitions but also give some extra aspects to it. 
+
+    Not only in the literature but digital twins also gained popularity nearly in all branches of industry,
+    especially in the manufacturing scene.  This resulted in the development of general platforms to construct digital twins. 
+    Furthermore, game engines such as Unity and  Unreal Engine have become popular tools for being an environment for digital twins, 
+    and some of them already offer dedicated digital twin platforms. For databases, there are ontology-based cloud solutions even with newly defined 
+    languages for managing the data associated with digital twins. However, while there are some accessible open-source projects, most of the digital 
+    twin platforms today are not free to use and may not be easy to access or grasp. 
+
+    To address the challenges associated with the accessibility and comprehensibility of the notion of digital twins,
+    the main purpose of this paper is to follow a lifecycle model to present the lifecycle stages of an RS, with the DTI and DTP,
+    but also to give observation results, including the challenges and solutions encountered during the process of creating a digital twin system.
+    To create a digital twin, the author used Omniverse as a digital twin environment (DTE), and ROS2 (Robot Operating System) as a sensor and communication middleware.
+    Additionally, an HC-SR04 ultrasonic sensor, Raspberry Pi, basic electronic components, and several third-party libraries have been used to construct the digital twins. 
+
+    \section{Method}\label{section:components}
+    Initially, a digital prototype representing the possible form of the real system, 
+    also called a selected prototype, was developed. Second, physical components of the real system 
+    relative to the digital twin prototype(DTP) were assembled. Subsequently, a connection between the real system(RS) 
+    and the digital twin instance(DTI) was established, 
+    resulted in the capturing of the information about the product throughout the remaining lifecycle stages.
+
+    
+    \bibliography{main}
+    \bibliographystyle{plain}
+    
+\end{document}
