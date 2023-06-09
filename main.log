@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.27)  8 JUN 2023 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.27)  9 JUN 2023 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -245,24 +245,24 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 -- Lines per column: 56 (exact).
 (c:/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
@@ -272,7 +272,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 7.
+Package hyperref Info: Link coloring ON on input line 9.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -295,10 +295,53 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (./main.bbl [1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+))
+
+LaTeX Warning: Citation `QualityandCompetitionanEssayinEconomicTheory' on page 1 undefined on input line 33.
+
+[1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-])
+]
+<./images//LIFECYCLE.png, id=88, 1573.88pt x 1127.21124pt>
+File: ./images//LIFECYCLE.png Graphic file (type png)
+<use ./images//LIFECYCLE.png>
+Package pdftex.def Info: ./images//LIFECYCLE.png  used on input line 79.
+(pdftex.def)             Requested size: 232.19843pt x 166.28801pt.
+ [2 <./images//LIFECYCLE.png>]
+<./images//Requirements.png, id=97, 1755.55875pt x 1130.2225pt>
+File: ./images//Requirements.png Graphic file (type png)
+<use ./images//Requirements.png>
+Package pdftex.def Info: ./images//Requirements.png  used on input line 143.
+(pdftex.def)             Requested size: 283.80157pt x 182.70184pt.
+
+Overfull \hbox (31.80157pt too wide) in paragraph at lines 143--146
+ [][] 
+ []
+
+[3 <./images//Requirements.png>]
+<./images//Left.png, id=104, 833.1125pt x 832.10875pt>
+File: ./images//Left.png Graphic file (type png)
+<use ./images//Left.png>
+Package pdftex.def Info: ./images//Left.png  used on input line 189.
+(pdftex.def)             Requested size: 258.0pt x 257.6844pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 189--192
+ [][] 
+ []
+
+<./images//Assembled.jpg, id=105, 1606.0pt x 1204.5pt>
+File: ./images//Assembled.jpg Graphic file (type jpg)
+<use ./images//Assembled.jpg>
+Package pdftex.def Info: ./images//Assembled.jpg  used on input line 204.
+(pdftex.def)             Requested size: 258.0pt x 193.49586pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 204--207
+ [][] 
+ []
+
+[4 <./images//Left.png> <./images//Assembled.jpg>]
+No file main.bbl.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -310,25 +353,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[5] (./main.aux)
 
-] (./main.aux)
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EC2455C903A2FBA5F476AC74CDE87A4D;270.
+(rerunfilecheck)             Checksum: EA3B284160EEAB20AFD68410BB54F888;3089.
  ) 
 Here is how much of TeX's memory you used:
- 9087 strings out of 474971
- 148110 string characters out of 5780120
- 509429 words of memory out of 5000000
- 30496 multiletter control sequences out of 15000+600000
- 498626 words of font info for 76 fonts, out of 8000000 for 9000
+ 9168 strings out of 474971
+ 149480 string characters out of 5780120
+ 513985 words of memory out of 5000000
+ 30549 multiletter control sequences out of 15000+600000
+ 499733 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,287b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,8n,77p,863b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 55187 bytes).
+Output written on main.pdf (5 pages, 1192588 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
