@@ -1,4 +1,100 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{RPI4}
+Buy a raspberry pi 4 model b – raspberry pi.
+\newblock \url{https://www.raspberrypi.com/products/raspberry-pi-4-model-b/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{UnrealEngineDT}
+Digital twin - unreal engine.
+\newblock \url{https://www.unrealengine.com/en-US/digital-twins}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{Ansys}
+Digital twin simulation-based software|ansys.
+\newblock \url{https://www.ansys.com/products/digital-twin}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{EclipseDitto}
+Eclipse ditto™ • open source framework for digital twins in the iot.
+\newblock \url{https://www.eclipse.org/ditto/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{HCSR04}
+How hc-sr04 ultrasonic sensor works \& how to interface it with arduino.
+\newblock
+  \url{https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{iTwin}
+itwin.js.
+\newblock \url{https://www.itwinjs.org/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{UnrealEngine}
+The most powerful real-time 3d creation tool - unreal engine.
+\newblock \url{https://www.unrealengine.com/en-US/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{Omniverse}
+Omniverse platform for creating and operating metaverse applications | nvidia.
+\newblock \url{https://www.nvidia.com/en-us/omniverse/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{UnityDT}
+Powering the world’s digital twins | unity.
+\newblock \url{https://unity.com/solutions/digital-twins}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{ROS2}
+Ros 2 documentation — ros 2 documentation: Foxy documentation.
+\newblock \url{https://docs.ros.org/en/foxy/index.html}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{Unity}
+Unity real-time development platform | 3d, 2d, vr \& ar engine.
+\newblock \url{https://unity.com/}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{DSDIGITALTWIN}
+Virtual twin experiences - the next generation of digital twins | dassault
+  systèmes.
+\newblock \url{https://www.3ds.com/virtual-twin}.
+\newblock (Accessed on 06/12/2023).
+
+\bibitem{ADigitalTwinArchitectureReferenceModelfortheCloudBasedCyberPhysicalSystems}
+Kazi~Masudul Alam and Abdulmotaleb El~Saddik.
+\newblock C2ps: A digital twin architecture reference model for the cloud-based
+  cyber-physical systems.
+\newblock {\em IEEE Access}, 5:2050--2062, 2017.
+
+\bibitem{TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles}
+Edward Glaessgen and David Stargel.
+\newblock {\em The Digital Twin Paradigm for Future NASA and U.S. Air Force
+  Vehicles}.
+
+\bibitem{GrievesPLMBook}
+Michael Grieves.
+\newblock {\em Product Lifecycle Management: Driving the Next Generation of
+  Lean Thinking}.
+\newblock McGraw-Hill Education Ltd, 01 2005.
+
+\bibitem{2005ArticleGrievesMichael}
+Michael Grieves.
+\newblock Product lifecycle management: the new paradigm for enterprises.
+\newblock {\em International Journal of Product Development - Int J Prod Dev},
+  2, 01 2005.
+
+\bibitem{Originsofdigitaltwinconcept}
+Michael Grieves.
+\newblock Origins of the digital twin concept.
+\newblock {\em Florida Institute of Technology / NASA}, 08 2016.
+
+\bibitem{Review2}
+David Jones, Chris Snider, Aydin Nassehi, Jason Yon, and Ben Hicks.
+\newblock Characterising the digital twin: A systematic literature review.
+\newblock {\em CIRP Journal of Manufacturing Science and Technology},
+  29:36--52, 2020.
 
 \bibitem{Review1}
 Mengnan Liu, Shuiliang Fang, Huiyue Dong, and Cunzhi Xu.
@@ -6,5 +102,41 @@ Mengnan Liu, Shuiliang Fang, Huiyue Dong, and Cunzhi Xu.
   applications.
 \newblock {\em Journal of Manufacturing Systems}, 58:346--361, 2021.
 \newblock Digital Twin towards Smart Manufacturing and Industry 4.0.
+
+\bibitem{ConferenceonNetworking}
+Weichao Luo, Tianliang Hu, Wendan Zhu, and Fei Tao.
+\newblock Digital twin modeling method for cnc machine tool.
+\newblock In {\em 2018 IEEE 15th International Conference on Networking,
+  Sensing and Control (ICNSC)}, pages 1--4, 2018.
+
+\bibitem{Thedigitaltwinimplementationforlinkingthevirtualrepresentationof}
+Nikolaos Nikolakis, Kosmas Alexopoulos, Evangelos Xanthakis, and George
+  Chryssolouris.
+\newblock The digital twin implementation for linking the virtual
+  representation of human-based production tasks to their physical counterpart
+  in the factory-floor.
+\newblock {\em International Journal of Computer Integrated Manufacturing},
+  32(1):1--12, 2019.
+
+\bibitem{SCHROEDER201612}
+Greyce~N. Schroeder, Charles Steinmetz, Carlos~E. Pereira, and Danubia~B.
+  Espindola.
+\newblock Digital twin data modeling with automationml and a communication
+  methodology for data exchange.
+\newblock {\em IFAC-PapersOnLine}, 49(30):12--17, 2016.
+\newblock 4th IFAC Symposium on Telematics Applications TA 2016.
+
+\bibitem{SODERBERG2017137}
+Rikard Söderberg, Kristina Wärmefjord, Johan~S. Carlson, and Lars Lindkvist.
+\newblock Toward a digital twin for real-time geometry assurance in
+  individualized production.
+\newblock {\em CIRP Annals}, 66(1):137--140, 2017.
+
+\bibitem{Digitaltwindrivenproductdesignframework}
+Fei Tao, Fangyuan Sui, Ang Liu, Qinglin Qi, Meng Zhang, Boyang Song, Zirong
+  Guo, Stephen C.-Y. Lu, and A.~Y.~C. Nee.
+\newblock Digital twin-driven product design framework.
+\newblock {\em International Journal of Production Research},
+  57(12):3935--3953, 2019.
 
 \end{thebibliography}

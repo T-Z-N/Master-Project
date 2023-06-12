@@ -31,31 +31,32 @@
     which might be resulted in misunderstanding and misapplication. Therefore, a practical example of a proto, easy-to-model example of the digital twin prototype and instance 
     can significantly improve understanding of the notion of the digital twin.
     
-    The digital twin(DT) was proposed in 2002 by the Grieves~\cite{Originsofdigitaltwinconcept}, as an ideal form of product life cycle management. The proposal was to create a co-existed information twin of 
-    a real system to gather new information to minimize the system needs and waste, such as material, time, and energy. It should be noted that initially this concept was called the mirrored spaced model, 
-    and later the information mirroring model(IMM). IMM had all the components of today's DTs: a real system(RS), a virtual system,  a connection between them, and additionally the virtual simulation.
-    However, after co-authoring with Vickers in 2010, the term 'digital twin' was adopted and Grieves simplified the model by excluding the virtual simulation component. 
+    The digital twin (DT) was proposed in 2002 by Grieves~\cite{Originsofdigitaltwinconcept}, as an ideal form of product life cycle management. The proposal was to create a co-existed information twin of 
+    a real system to gather new information to minimize the system needs and waste, such as material, time, and energy. It should be noted that initially this concept was called the mirrored spaced model~\cite{Originsofdigitaltwinconcept}, 
+    and later the information mirroring model (IMM)~\cite{GrievesPLMBook,2005ArticleGrievesMichael}. IMM had all the components of today's DTs: a real system (RS), a virtual system, 
+    a connection between them, and additionally the virtual simulation~\cite{GrievesPLMBook}.
+    However, after co-authoring with Vickers in 2010, the term 'digital twin' was adopted and Grieves simplified the model by excluding the virtual simulation component ~\cite{Originsofdigitaltwinconcept}. 
     
-    Since then, there has been a considerable amount of literature has been published on DTs,
-    however, to date, even though Grieves already given the definition, there has been little agreement on the precise definition and application. 
-    Numerous authors have considered different definitions, including digital twins as a multi-physics environment 1, an equivalent to a product 2, 
-    a digital copy 3, a cyber component of a Cyber-Physical System 4, a controlling and monitoring unit 5, and many more 6. However, if inspected carefully,
-    most of these not only don't coincide with Grieves's definitions but also give some extra aspects to it. 
-
+    Since then, there has been a considerable amount of literature published on DTs~\cite{Review1,Review2},
+    however, to date, even though Grieves has already given the definition~\cite{Originsofdigitaltwinconcept}, there has been little agreement on the precise definition and application. 
+    Numerous authors have considered different definitions, including digital twins as a multi-physics environment ~\cite{TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles}, an equivalent to a product
+    ~\cite{SCHROEDER201612}, a digital copy~\cite{SODERBERG2017137}, a cyber component of a Cyber-Physical System ~\cite{ADigitalTwinArchitectureReferenceModelfortheCloudBasedCyberPhysicalSystems},
+    and many more ~\cite{Digitaltwindrivenproductdesignframework,ConferenceonNetworking,Thedigitaltwinimplementationforlinkingthevirtualrepresentationof}. 
+    However, if inspected carefully, most of these not only don't coincide with Grieves's definitions but also give some extra aspects to it. 
+   
     This absence of agreement exists not only in the literature; it also reaches the industry. This resulted in the development of many different 
-    general platforms to construct digital twins. Furthermore, game engines such as Unity and Unreal Engine have become popular tools for being an 
-    environment for digital twins, and some of them already offer dedicated digital twin platforms. 
-    However, while there are some accessible open-source projects, most of the digital twin platforms today are not free to use, 
+    general platforms to construct digital twins~\cite{Ansys,DSDIGITALTWIN}. Furthermore, game engines such as Unity~\cite{Unity} and Unreal Engine~\cite{UnrealEngine} have become popular tools for being an 
+    environment for digital twins, and some of them already offer dedicated digital twin platforms~\cite{UnityDT,UnrealEngineDT}. 
+    However, while there are some accessible open-source projects~\cite{EclipseDitto,iTwin}, most of the digital twin platforms today are not free to use, 
     which makes it harder to acquire practical knowledge about digital twins. 
 
     To address the challenges associated with the accessibility and comprehensibility of the notion of digital twins, the author presented the
-    process of assembling a real system along with a digital twin prototype(DTP) and digital twin instance(DTI), both being forms of DT, 
-    by following adopted lifecycle models. Furthermore, 
-    the author presented the observations, including the challenges and solutions encountered during the process.
+    process of assembling a real system along with a digital twin prototype (DTP)~\cite{Originsofdigitaltwinconcept}and digital twin instance (DTI)~\cite{Originsofdigitaltwinconcept}, both being forms of DT, 
+    by following adopted lifecycle models. Furthermore, the author presented the observations, including the challenges and solutions encountered during the process.
 
-    During the implementation, the author utilized Omniverse as a digital twin environment (DTE) and used ROS2 (Robot Operating System 2) 
-    as a sensor and communication middleware and gave behavior to the real system. An HC-SR04 ultrasonic sensor, Raspberry Pi 4(RPI4), 
-    basic electronic components, and several third-party libraries have been used to construct the real system. 
+    During the implementation, the author utilized Omniverse~\cite{Omniverse} as a digital twin environment (DTE)~\cite{Originsofdigitaltwinconcept} and used ROS2 (Robot Operating System 2)~\cite{ROS2}
+    as a sensor and communication middleware and gave behavior to the real system. An HC-SR04 ultrasonic sensor~\cite{HCSR04}, Raspberry Pi 4(RPI4)~\cite{RPI4}, 
+    basic electronic components and several third-party libraries have been used to construct the real system. 
 
     \section{Method}\label{section:Method}
     Initially, a digital prototype representing the possible form of the real system, 

@@ -3,44 +3,60 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: main.bib
-You've used 1 entry,
+Warning--to sort, need author or key in Ansys
+Warning--to sort, need author or key in DSDIGITALTWIN
+Warning--to sort, need author or key in Unity
+Warning--to sort, need author or key in UnrealEngine
+Warning--to sort, need author or key in UnityDT
+Warning--to sort, need author or key in UnrealEngineDT
+Warning--to sort, need author or key in EclipseDitto
+Warning--to sort, need author or key in iTwin
+Warning--to sort, need author or key in Omniverse
+Warning--to sort, need author or key in ROS2
+Warning--to sort, need author or key in HCSR04
+Warning--to sort, need author or key in RPI4
+Warning--empty chapter and pages in TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles
+Warning--empty publisher in TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles
+Warning--empty year in TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            505 strings with 4237 characters,
-and the built_in function-call counts, 409 in all, are:
-= -- 38
-> -- 23
-< -- 0
-+ -- 9
-- -- 8
-* -- 33
-:= -- 77
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 7
+            632 strings with 8460 characters,
+and the built_in function-call counts, 6161 in all, are:
+= -- 582
+> -- 250
+< -- 1
++ -- 109
+- -- 82
+* -- 382
+:= -- 951
+add.period$ -- 73
+call.type$ -- 24
+change.case$ -- 111
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 27
-format.name$ -- 8
-if$ -- 80
+cite$ -- 39
+duplicate$ -- 225
+empty$ -- 576
+format.name$ -- 82
+if$ -- 1344
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 9
-num.names$ -- 2
-pop$ -- 4
+int.to.str$ -- 24
+missing$ -- 14
+newline$ -- 124
+num.names$ -- 24
+pop$ -- 195
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 89
 quote$ -- 0
-skip$ -- 7
+skip$ -- 149
 stack$ -- 0
-substring$ -- 26
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 273
+swap$ -- 30
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 15
+type$ -- 92
+warning$ -- 15
+while$ -- 33
+width$ -- 26
+write$ -- 240
+(There were 15 warnings)
