@@ -59,67 +59,66 @@
     basic electronic components and several third-party libraries have been used to construct the real system. 
 
     \section{Method}\label{section:Method}
-    Initially, a digital prototype representing the possible form of the real system, 
-    also called a selected prototype, was developed. Second, physical components of the real system 
-    relative to the digital twin prototype(DTP) were assembled. Subsequently, a connection between the real system(RS) 
-    and the digital twin instance(DTI) was established, 
+    To start the process of developing the digital twins and real system (RS), first, a digital prototype (DTP) 
+    representing the possible form of the RS, also called a selected prototype, was developed. 
+    Second, the physical components of the RS relative to the DTP were assembled. 
+    Subsequently, a connection between the RS and the digital twin instance (DTI) was established, 
     resulting in the capturing of information about the product throughout the remaining lifecycle stages.
 
-    Overall, a Digital Twin is a compendium of product information and evolves through the entire lifecycle of the product.
-    It was important to recognize that, DTP and DTI also have their lifecycles,
-    which most of the time run in parallel with the product lifecycle. 
-    In this study, the author explored several different lifecycle frameworks and standards {grieves, ISO's} and 
-    suited the lifecycle models from ISO/IEC 24748-1 to the context of digital twins, which includes the stages of  
-    Concept, Development, Operation, Maintenance, and finally Retirement.  However, to effectively demonstrate the construction of the digital twins, 
-    the author presented the creation of the DTP and DTI from the perspective of the real system's lifecycle. This approach involved an additional stage called production, 
-    which includes the process of production of the RS.
-    
+    Nonetheless, the Digital Twin (DT) is a compendium of product information and evolves through the entire lifecycle of the product. 
+    Therefore, it was important to recognize the DTP and DTI's lifecycles, which most of the time run in parallel with the product lifecycle.
+
+    Therefore, the author explored different lifecycle frameworks and standards~\cite{ISO/IEC/IEEE12207,ISO/IEC/IEEE15288,ISO/IEC/IEEE24748-1:2018} and adapted the lifecycle models 
+    from ISO/IEC 24748-1 to the notion of digital twins. 
+    These frameworks include the stages of  Concept, Development, Support\&Maintenance, and finally Retirement~\cite{ISO/IEC/IEEE24748-1:2018}. 
+    However, to effectively demonstrate the construction of the digital twins, the author presented the creation of the DTP and DTI from the perspective of the real system's lifecycle stages. 
+    This approach involved an additional stage called production, which includes the process of production of the RS~\cite{ISO/IEC/IEEE24748-1:2018}.
+
+    It should be noted that, in the ideal world, there would be no need for a development or a concept phase 
+    for the RS. However, currently, it is not yet feasible to completely digitalize every aspect of the real system, 
+    hence DTI and DTP were used to assist the RS through its lifecycle by transforming atoms to bits~\cite{BeingDigital}.
+
+
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.45\textwidth]{LIFECYCLE.png}
-        \caption{Incorrect (a) and incomplete (b) status has been demonstrated with a simplified finite state machine. Incorrectness can be observed in the behavior 
-        of the machine after 2 state transitions. Incompleteness, on the other hand, can be observed in the missing state. It should be noted that, even though the second state machine is missing a 
-        component, it shows the right behavior, hence it is correct.}\label{fig:LIFECYCLE}
+        \caption{All three lifecycles of RS, DTP, and DTI have been illustrated in order with three different colours.}\label{fig:LIFECYCLE}
     \end{figure}
     
     It should be noted that, in the ideal world, there would be no need for a development or a concept phase for the RS. However, currently, it is not yet feasible to completely digitalize every aspect of the real system,
     hence  DTI and DTP were used to assist the RS through its lifecycle by transforming atoms to bits /ref.
 
     \subsection{Concept Stage}
-    The concept stage for the DTP, DTI, and RS was initiated at the same time, aimed to have initial considerations and find feasible solutions, that align with the desires of the stakeholders. Although this study was a solo project, the RS, DTP, and DTI were shown to multiple individuals, hence the use of the plural term "stakeholders" was appropriate. 
-
-    This stage was responsible for exploration, fact-finding, and initial planning while considering the economic, technical, and strategic aspects of the system. For that reason, a fast-paced requirement 
-    engineering approach was selected, which resulted in the identification of functional and quality requirements, as well as constraints for the DTP, DTI, and RS.  
-    After the requirement analysis was done, the approval to proceed to the Development Stage was given. 
+    This stage was responsible for exploration, fact-finding, and initial planning while considering the economic, technical, and strategic aspects of the system, in alignment with the desires of the stakeholders. 
+    
+    To ensure efficiency and productivity, a fast-paced requirement engineering approach was applied, which resulted in the identification of functional and quality requirements, 
+    as well as constraints for the DTP, DTI, and RS. Once the requirement analysis was done, and the necessary approvals were obtained, the RS proceeded to the Development Stage. 
     
     \subsection{Development Stage}
-    Similar to the concept phase, the development of the  DTP, DTI, and RS was started simultaneously. In this stage, the requirements and design solutions for each were transformed 
-    into feasible products which were used in the following stages of the lifecycle. The primary objective of this stage was to create hardware and software models as well as their corresponding interfaces. 
-    These created models were analyzed, verified, and validated. 
+    During the development stage, the requirements and design solutions for each system were transformed into feasible products which were used in the following stages of the lifecycle.
+    The primary objective of this stage was to develop hardware and software models as well as their corresponding interfaces. 
+    These developed models were first analyzed and later verified, and validated. 
 
+    Even though the inclusion of information about the assembly and production planning, maintenance and support procedures as well as retirement considerations,
+    and various other aspects should be ideally present in this stage, they were not included in this study due to time and budget constraints. 
 
-
-    Even though the information about the assembly and production planning, maintenance and support procedures as well as retirement considerations, and many other aspects should ideally be present 
-    at this stage, they were not included in this study. 
-
-    As a result of this stage, the RS was developed and assembled digitally within the DTE as a DTP. This DTP was prepared to assemble the physical components of the RS in the physical, observable environment.  
-    After the verification and validation process of the developed RS within the DTE was finished, approval to proceed to the Production Stage was given.
+    As a result of this stage, the RS was digitally developed and assembled within the DTE as a DTP. This DTP was prepared to assemble the physical components of the RS in the physical,
+    observable environment. After the verification and validation process of the developed RS within the DTE was finished, RS proceeded to the Production Stage.
 
     \subsection{Production Stage}
-    The production stage of the RS, which was constrained by the development stage of the DTP, progressed with the assistance of  DTP in the observable environment.  As an outcome, the RS was initialized successfully in the observable world and was ready for operation during the support and maintenance stage. However, the development stage of the DTI constrained this initiation. Therefore, the development of the DTI was completed before the initiation of the support and maintenance stage of the RS.  
-    Additionally, the connection between the DTI and RS was established, tested, and evaluated to ensure data capture during the operation.
+    The production stage of the RS was constrained by the development stage of the DTP, which progressed with the assistance of  DTP in the observable environment.  As an outcome, the RS was initialized in the observable world and was ready for operation during the support and maintenance stage. However, another constraint, the development stage of the DTI, constrained this initiation. Therefore, the development of the DTI was completed before the initiation of the support and maintenance stage of the RS. 
+    After the development, the connection between the DTI and RS was established, tested, and evaluated to ensure data capture during the operation.
 
     \subsection{Service and Maintenance Stage}
-    After the production stage, the RS and DTI started to function together. This functionality or rather a behavior was demonstrated to both technical and non-technical individuals, 
-    and this way, the usage of the system was simulated. However, the feedback and assessment from these individuals, such as the quality of the system relative to user perspective,
-    was out of scope for this paper, hence they were not included.  Furthermore, since there was no need for modifications while using/operating the system, 
+    After the production stage, the RS and DTI started to function simultaneously. This functionality or rather a behavior was 
+    demonstrated to both technical and non-technical individuals, and this way, the usage of the system was simulated. 
+    However, the feedback and assessment from these individuals, such as the quality of the system relative to the user perspective, was out of 
+    scope for this paper and hence was not included.  Furthermore, since there was no need for modifications while using/operating the system, 
     as a result, maintenance considerations were excluded. As an outcome of this stage, the real system was ready to be put out of service, in other words, was ready to retire.
 
     \subsection{Retirement Stage}
 
-    At this stage, the product was decommissioned and the reusable parts were collected. Simultaneously, DTI was commencing to of service state as the product retired.
-
-    Since there was no significant waste generated, there was no need for a disposal process.  
+    At this stage, the RS was decommissioned and the reusable parts were collected. Simultaneously, DTI and DTP were commencing to service state as the product retired. Since there was no significant waste generated, there was no need for a disposal process.   
 
     \section{Implementation}\label{section:implementation}
 
