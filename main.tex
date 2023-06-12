@@ -25,38 +25,37 @@
     \end{abstract}
 
     \section{Introduction}\label{section:introduction}
-    As new and complex technologies advance to emerge, it becomes progressively difficult to understand and define their core concepts. 
-    One of the significant current examples in the area of digitalization is the concept of digital twins, which has resulted in numerous definitions,
-    that vary from one derivation to another. Because, even though the terms "digital" and "twin" are easy to grasp,  their consolidation develops a new challenging concept,
-    which might be resulted in misunderstanding and misapplication.
-    Therefore, a practical example of a proto, easy-to-model example of the digital twin prototype and instance can significantly improve 
-    the understanding of the notion of the digital twin.\cite{QualityandCompetitionanEssayinEconomicTheory}
+    As new and complex technologies advance to emerge, it becomes progressively difficult to understand and define their core concepts.
+    One of the significant current examples in the field of digitalization is the notion of digital twins, which has resulted in numerous definitions~\cite{Review1}, 
+    that vary from one derivation to another. Because, even though the terms "digital" and "twin" are easy to grasp, their consolidation develops a new challenging concept, 
+    which might be resulted in misunderstanding and misapplication. Therefore, a practical example of a proto, easy-to-model example of the digital twin prototype and instance 
+    can significantly improve understanding of the notion of the digital twin.
     
-    The idea of the digital twin was proposed in 2002 by the Grieves,
-    as an ideal form of product life cycle management.
-    The proposal was to create a co-existed information twin of a real system to gather new information to minimize the system needs and waste,
-    such as material, time, and energy. It should be noted that initially this concept was called the mirrored spaced model, and later the information mirroring model(IMM).
-    IMM had all the components of today's digital twins: a real system, a virtual system,  a connection between them, and additionally the virtual simulation. 
-    However, after co-authoring with Vickers in 2010, the term 'digital twin' was adopted and Grieves simplified the model by excluding the virtual simulation component.
+    The digital twin(DT) was proposed in 2002 by the Grieves~\cite{Originsofdigitaltwinconcept}, as an ideal form of product life cycle management. The proposal was to create a co-existed information twin of 
+    a real system to gather new information to minimize the system needs and waste, such as material, time, and energy. It should be noted that initially this concept was called the mirrored spaced model, 
+    and later the information mirroring model(IMM). IMM had all the components of today's DTs: a real system(RS), a virtual system,  a connection between them, and additionally the virtual simulation.
+    However, after co-authoring with Vickers in 2010, the term 'digital twin' was adopted and Grieves simplified the model by excluding the virtual simulation component. 
     
-    There has been a considerable amount of literature has been published on Digital Twins, 
-    however, to date, even though Grieves already gave the definition, there has been little agreement on the precise definition and application. 
+    Since then, there has been a considerable amount of literature has been published on DTs,
+    however, to date, even though Grieves already given the definition, there has been little agreement on the precise definition and application. 
     Numerous authors have considered different definitions, including digital twins as a multi-physics environment 1, an equivalent to a product 2, 
-    a digital copy 3, a cyber component of a Cyber-Physical System 4, a controlling and monitoring unit 5, and many more 6. However, if inspected carefully, 
+    a digital copy 3, a cyber component of a Cyber-Physical System 4, a controlling and monitoring unit 5, and many more 6. However, if inspected carefully,
     most of these not only don't coincide with Grieves's definitions but also give some extra aspects to it. 
 
-    Not only in the literature but digital twins also gained popularity nearly in all branches of industry,
-    especially in the manufacturing scene.  This resulted in the development of general platforms to construct digital twins. 
-    Furthermore, game engines such as Unity and  Unreal Engine have become popular tools for being an environment for digital twins, 
-    and some of them already offer dedicated digital twin platforms. For databases, there are ontology-based cloud solutions even with newly defined 
-    languages for managing the data associated with digital twins. However, while there are some accessible open-source projects, most of the digital 
-    twin platforms today are not free to use and may not be easy to access or grasp. 
+    This absence of agreement exists not only in the literature; it also reaches the industry. This resulted in the development of many different 
+    general platforms to construct digital twins. Furthermore, game engines such as Unity and Unreal Engine have become popular tools for being an 
+    environment for digital twins, and some of them already offer dedicated digital twin platforms. 
+    However, while there are some accessible open-source projects, most of the digital twin platforms today are not free to use, 
+    which makes it harder to acquire practical knowledge about digital twins. 
 
-    To address the challenges associated with the accessibility and comprehensibility of the notion of digital twins,
-    the main purpose of this paper is not only to follow a lifecycle model to present the lifecycle stages of an RS, with the DTI and DTP,
-    but also to give observation results, including the challenges and solutions encountered during the process of creating a digital twin system.
-    To create a digital twin, the author used Omniverse as a digital twin environment (DTE), and ROS2 (Robot Operating System) as a sensor and communication middleware.
-    Additionally, an HC-SR04 ultrasonic sensor, Raspberry Pi, basic electronic components, and several third-party libraries have been used to construct the digital twins. 
+    To address the challenges associated with the accessibility and comprehensibility of the notion of digital twins, the author presented the
+    process of assembling a real system along with a digital twin prototype(DTP) and digital twin instance(DTI), both being forms of DT, 
+    by following adopted lifecycle models. Furthermore, 
+    the author presented the observations, including the challenges and solutions encountered during the process.
+
+    During the implementation, the author utilized Omniverse as a digital twin environment (DTE) and used ROS2 (Robot Operating System 2) 
+    as a sensor and communication middleware and gave behavior to the real system. An HC-SR04 ultrasonic sensor, Raspberry Pi 4(RPI4), 
+    basic electronic components, and several third-party libraries have been used to construct the real system. 
 
     \section{Method}\label{section:Method}
     Initially, a digital prototype representing the possible form of the real system, 
@@ -131,7 +130,7 @@
     In the support \& maintenance stage, the behavior of the real system and digital twin instance is observed by the individuals, which resulted in great feedback, which proved subjectively, the seamless connection between the real system and digital twin instance with required fidelity. 
     After the observations, the system got into the retirement stage, and the digital twin instance and later digital twin prototype were retired.
 
-    \subsection{Concept Stage}
+    \subsection{Implementation of the Concept Stage}
     For the concept stage, first, the author focused on the requirement analysis and gathered all the requirements for the possible system. Software such as Obsidian along with the Excalidraw community plugin was used to conceptualize the systems and most importantly 
     for the documentation of the requirements. Each system requirement was considered separately and later put together in the table. Requirements for the DTE were not considered.    
 
@@ -146,7 +145,7 @@
         component, it shows the right behavior, hence it is correct.}\label{fig:Requirements}
     \end{figure}
 
-    \subsection{Development Stage}
+    \subsection{Implementation of the Development Stage}
     After these requirements, the development of the DTP was started. To create a DTP of the planned RS, two different software programs were used for two different purposes including Fusion 360, 
     a Computer-Aided Design software, and Blender, a 3D-Graphics software. Later the modeled DTP is integrated into the Omniverse, and the behavior is given with the ROS2 node.
 
@@ -192,7 +191,7 @@
         component, it shows the right behavior, hence it is correct.}\label{fig:Left}
     \end{figure}
 
-    \subsection{Production Stage}
+    \subsection{Implementation of the Production Stage}
     First, the components were assembled on the prototype breadboard in accordance with the DTP. Next, circuit components were connected with the jumper cables to the appropriate general-purpose input/output (GPIO), ground, and power pins of Raspberry Pi 4 (RPI4). 
 
     After the assembly, the DTI interfaces were developed and the ROS2 node from the DTP was copied and later modified, to connect the RS to the DTI. It should be noted that only the behavior of the LEDs was twinned and not the other attributes of the RS such as spatial data of the components were not. This connection was tested visually. 
@@ -207,10 +206,10 @@
         component, it shows the right behavior, hence it is correct.}\label{fig:Assembled}
     \end{figure}
 
-    \subsection{Support and Maintenance Stage}
+    \subsection{Implementation of the Support and Maintenance Stage}
     RS, DTI, and DTP were shown to the stakeholders and their assessment of the quality attributes was written. After all, stakeholders saw the RS, DTI, and DTP, the RS was ready to be decommissioned with the corresponding DTI.
     
-    \subsection{Retirement Stage}
+    \subsection{Implementation of the Retirement Stage}
     The RS was decommissioned and disassembled, and the DTI was achieved with it. DTP is also archived, however, with the many products, that would not be the case.
 
     \section{Observations} 
