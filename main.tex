@@ -114,63 +114,80 @@
 
     \subsection{Retirement Stage}
 
-    At this stage, the RS was decommissioned and the reusable parts were collected. Simultaneously, DTI and DTP were commencing to service state as the product retired. Since there was no significant waste generated, there was no need for a disposal process.   
+    At this stage, the RS was decommissioned and the reusable parts were collected. Simultaneously, DTI and DTP were commencing to service state as the product retired. 
+    Since there was no significant waste generated, there was no need for a disposal process.   
 
+   
     \section{Implementation}\label{section:implementation}
 
-    By following the lifecycle framework in Methods, the author ended up using various hardware and software tools to conceptualize, develop, produce, operate, and retire the RS along with the DTI and DTP.
+    By following the lifecycle framework in Methods, the author ended up using various hardware and software tools to conceptualize, 
+    develop, produce, operate, and retire the RS along with the DTI and DTP.
+    
+    \begin{table}
+        \centering
+        \caption{List of hardware which was used during the development of the RS.}
+        \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Quantity} & \textbf{Item} \\
+        \hline
+        1 & Raspberry Pi 4 \\
+        1 & Raspberry Pi 4 Adapter \\
+        1 & RTX Graphics Card 2060 \\
+        1 & Prototype Breadboard \\
+        1 & Micro SD Card \\
+        1 & HC-SR04 Ultrasonic sensor \\
+        3 & LED lamps \\
+        5 & 330 Ohm Resistors \\
+        20 & Jumper Cables \\
+        \hline
+        \end{tabular}
+        \end{table}
 
     \subsection{Implementation of the Concept Stage}
-    For the concept stage, first, the author focused on the requirement analysis and gathered all the requirements for the possible system. Software such as Obsidian along with the Excalidraw community plugin was used to conceptualize the systems and most importantly 
-    for the documentation of the requirements. Each system requirement was considered separately and later put together in the table. Requirements for the DTE were not considered.    
+    For the concept stage, first, the author focused on the requirement analysis and gathered the requirements for the potential system. Software tools like Obsidian, coupled with the Excalidraw community plugin, 
+    were used to conceptualize the systems and most importantly for the documentation of the requirements.   
 
-    Later, several prototyping not only digital but also partially physical prototyping was done. 
-    Requirements were revised, elicitated, and reworked, which resulted in a feasible solution with the selected components to develop a digital twin prototype within the Omniverse.
+    First, the initial requirements were gathered, listed, and finally categorized into three different groups.  Later, several prototyping activities were conducted both digital and physical. 
+    Later, requirements were elicitated and reworked with the gathered knowledge through prototyping, which resulted in a feasible solution with the selected components to develop a digital twin 
+    prototype within the Omniverse. However, it's worth noting that, 
+    even though the requirements for the DTE were important, they were not considered due to the simplicity of the project. 
     
     \begin{figure}[htbp]
         \centering
-        \includegraphics[width=0.55\textwidth]{Requirements.png}
-        \caption{Incorrect (a) and incomplete (b) status has been demonstrated with a simplified finite state machine. Incorrectness can be observed in the behavior 
-        of the machine after 2 state transitions. Incompleteness, on the other hand, can be observed in the missing state. It should be noted that, even though the second state machine is missing a 
-        component, it shows the right behavior, hence it is correct.}\label{fig:Requirements}
+        \includegraphics[width=0.50\textwidth]{Requirements.png}
+        \caption{List of requirements. Green ones are representing the elicitated requirements.}\label{fig:Requirements}
     \end{figure}
 
     \subsection{Implementation of the Development Stage}
-    After these requirements, the development of the DTP was started. To create a DTP of the planned RS, two different software programs were used for two different purposes including Fusion 360, 
-    a Computer-Aided Design software, and Blender, a 3D-Graphics software. Later the modeled DTP is integrated into the Omniverse, and the behavior is given with the ROS2 node.
 
-    First, pre-existing digitalized possible RS components were sourced from the internet, and modified for use. The ones that were not found, such as jumper cables, were developed by the author 
-    in the Fusion 360. Once all the required components were available and the model reached the required fidelity level, detailing was stopped and parts were digitally assembled. 
-    Lastly, the assembled digital model was converted to a .fbx file.
+    To develop a DTP of the planned RS, two different software programs were used for two different purposes including Fusion 360, a 
+    Computer-Aided Design software, and Blender, a 3D-Graphics software. Subsequently, the developed DTP was integrated into the Omniverse, 
+    and its behavior was given through the ROS2 node.
 
-    After the conversion, the Blender was used, to convert a .fbx file to a .usd file for the intention of importing into the DTE. However, before the conversion, 
-    adjustments were made to the .fbx file to fix issues, such as corrupted visuals and inherited hierarchy problems, which occurred due to the insufficient performance of the conversion. 
-    Later, the corrected file was converted into a .usd file. 
+    First, pre-existing digitalized possible RS components were sourced from the internet and were modified for utilization. 
+    The components that were not found, such as jumper cables, were developed by the author in the Fusion 360. Once all the required components 
+    were available and the model reached the desired fidelity level, 
+    detailing was stopped and the individual parts were digitally assembled. Lastly, the assembled digital model was converted to a .fbx file format.
+    
+    After the conversion, the Blender was used, to convert a .fbx file to a .usd file format with the intention of importing into the DTE. However, before the conversion, 
+    several adjustments were made to the .fbx file to fix issues, such as corrupted visuals and inherited hierarchy problems, which occurred due to the insufficient performance of the conversion tools. 
 
-    Finally, Blender was reopened, and the previously converted .usd file was imported. Further adjustments were made to the file and were saved again as a .usd file. Upon completion of this process, 
-    the file was prepared for importation into the DTE.
+    Furthermore, the headless version of  Ubuntu 20.04 was installed on a micro-SD card, and inserted into the RPI4. Second, the cryptographic network protocol, the secure shell(SSH) 
+    was used to connect the RPI4 to a local computer running Ubuntu 20.04. Subsequently, the Robot Operating System 2 (ROS2) version "Foxy" was installed on both the RPI 4 and the local computer. 
+    Lastly, to access and control the General Purpose Input/Output (GPIO) pins of the RPI4, the Wiring Pi library was installed on the RPI4.
 
-    Furthermore, headless Ubuntu 20.04 was installed on a micro-SD card, and inserted into the RPI4. Second, the cryptographic network protocol SSH was used to connect the RPI4 to a local computer that already had Ubuntu 20.04.
-     Subsequently, the Robot Operating System 2 (ROS2) version of Foxy was installed on both the RPI 4 and the local computer. 
-     Lastly, to access and control the GPIO pins of the RPI4, the Wiring Pi library was installed on RPI4.
+    ROS2 was used as a sensor and communication middleware to give behavior to the real system components as well as to digital twin instances. Therefore, a custom package was developed with
+    C++ programming language to acquire data from the ultrasonic sensor and control the state of three LEDs. This behavior was integrated into a single node, which was executed with a single-thread executor. 
+    Lastly, the ROS2 node run and the desired behavior of the real system were observed in the digital twin prototype to ensure that the three LEDs were giving all possible states of the RS.
 
-    ROS2 was used as a sensor and communication middleware to give behavior to the real system components as well as to digital twin instances. 
-    Therefore, a custom package was developed with C++  to read data from the ultrasonic sensor and control the state of three LEDs. This behavior was integrated into a single node, which was executed with a single-thread executor. Lastly, the combined ROS2 node was run, and the required behavior of the real system was observed in the digital twin prototype to ensure that the three LEDs were giving the possible state of the RS.
+    To initialize the DTE, Isaac Sim was installed on a local computer using the Omniverse launcher. Once the installation was completed, the correct ROS2 bridge was selected. 
+    At this step, it was important not to source the ROS2 Workspace within the same terminal that Isaac Sim was operating, such as through automatic sourcing via bashrc, to prevent potential compilation errors. 
 
-    The chosen DTE for this demonstration was Isaac Sim, which is fully integrated into the NVIDIA Omniverse platform. Isaac Sim was designed specifically for the training and testing of complex robotic 
-    systems in realistic virtual environments. Despite the simplicity of the demonstration, which was not a complex robotic system, there were two crucial reasons for the platform selection. 
-    First, Isaac Sim offers a ROS2 bridge, which enabled a seamless connection between ROS2 and Omniverse, facilitating relatively easy and smooth data exchange. Second, it leverages RTX Graphics, 
-    which delivered high-performance graphics rendering, resulting in an improvement in visual fidelity. 
+    After the initialization, the modified .usd file was imported into the Omniverse. 
+    After the import, a visual inspection of the individual parts was then conducted, to ensure its fidelity. Later,  needed adjustments and modifications were made. 
 
-    First, to initialize the DTE, Isaac Sim was installed on a local computer using the Omniverse launcher. Once the installation was completed, the correct ROS2 bridge was selected. 
-    At this step, it was important not to source the ROS2 Workspace within the same terminal that Isaac Sim was operating, for example with the automatic sourcing via bashrc, to prevent potential compilation errors. 
-
-    After the initialization, the modified .usd file was imported into the Isaac Sim scene. After the import, a visual inspection of the individual 
-    parts was then conducted, and needed adjustments were made. 
-
-    Next, to integrate the behavior, visual scripting has been used with the integrated ROS2 bridge, which resulted in the integrated behavior. 
-    Later behavior of the LEDs was tested, and needed corrections have been made. As a consequence, the required level of fidelity of the DTP, within the DTE 
-    was reached successfully, and the next step, which was the assembly of the real system was ready.
+    Next, to integrate the behavior, a visual scripting tool in Omniverse has been used with the integrated ROS2 bridge. Later behavior of the LEDs was tested visually, 
+    and needed corrections and modifications were made. As a consequence, the desired level of fidelity of the DTP, within the DTE was reached, signifying the success of the process.
 
     
     \begin{figure}[htbp]
@@ -182,9 +199,11 @@
     \end{figure}
 
     \subsection{Implementation of the Production Stage}
-    First, the components were assembled on the prototype breadboard in accordance with the DTP. Next, circuit components were connected with the jumper cables to the appropriate general-purpose input/output (GPIO), ground, and power pins of Raspberry Pi 4 (RPI4). 
 
-    After the assembly, the DTI interfaces were developed and the ROS2 node from the DTP was copied and later modified, to connect the RS to the DTI. It should be noted that only the behavior of the LEDs was twinned and not the other attributes of the RS such as spatial data of the components were not. This connection was tested visually. 
+    First, the components were assembled on the prototype breadboard in accordance with the DTP. Next, circuit components were connected with the jumper cables to the appropriate GPIO, ground, and power pins of RPI4. 
+
+    After the assembly, the DTI interfaces were developed and the ROS2 node from the DTP was copied and later modified, to connect the RS to the DTI. It should be noted that only the behavior of the LEDs was twinned and not the other attributes 
+    of the RS such as spatial data of the components, which was tested visually.
 
     After the development of the DTI was finalized, the RS was ready to proceed to the operation in the support and maintenance stage.
 
@@ -196,44 +215,54 @@
         component, it shows the right behavior, hence it is correct.}\label{fig:Assembled}
     \end{figure}
 
-    \subsection{Implementation of the Support and Maintenance Stage}
-    RS, DTI, and DTP were shown to the stakeholders and their assessment of the quality attributes was written. After all, stakeholders saw the RS, DTI, and DTP, the RS was ready to be decommissioned with the corresponding DTI.
-    
-    \subsection{Implementation of the Retirement Stage}
-    The RS was decommissioned and disassembled, and the DTI was achieved with it. DTP is also archived, however, with the many products, that would not be the case.
+    \subsection{Implementation of the Support\&Maintenance and Retirement Stage}
+    RS, DTI, and DTP were shown to the stakeholders and their assessment of the quality attributes was written.   
 
-    \section{Observations} 
-    To address the challenges associated with the accessibility and comprehensibility of the notion of digital twins, authors followed a lifecycle model to present the lifecycle stages of an RS, with the DTI and DTP.During these stages, there were some observations, and challenges during the process of creating the digital twins. 
-    
+    Later, the RS was decommissioned and disassembled, and DTI and DTP were archived.     
+
+    \section{Observations and Conclusion} 
+
+    To address the challenges associated with the accessibility and comprehensibility of the notion of digital twins, the author followed the lifecycle stages of the real system, 
+    while presenting the development of the DTP and DTI. During these stages, there were worthwhile observations, and challenges during the process of creating the digital twins.     
+
     \subsection{Observations while Creating Digital Twin Prototype}
 
-    First, the authors did not consider the CAD environment as a digital environment, instead considered Omniverse as a digital environment. Therefore, in this application, conversion of CAD files to .obj or .fbx and later to .usd was inevitable. The results of the conversions show that a significant amount of model data gets lost, corrupted, or duplicated during the file conversions because of the complexity of the models. Therefore to minimize the data loss, reducing the number of parts by grouping parts together as one solid part and removing the unnecessary details, modifying the names of the parts to simple ones, and deleting material properties were helpful and needed. However, some of these processes are irreversible, hence they might reduce the fidelity of the model drastically.
+    The author did not consider the CAD environment as a DTE, instead considered the Omniverse as one. Therefore, in this application, conversion of CAD files to .obj or .fbx and later to .usd file formats were 
+    inevitable. However, conversation results showed that a significant amount of model data gets lost, corrupted, or duplicated during the file conversions because of the complexity of the models along with the performance of the converters.
 
-    Further observations show that, during the modeling process, non-conventional ways, such as modeling electric cables as 3D in CAD, increased the overall fidelity of the DTP and consequently.
+    Therefore to mitigate the data loss, reducing the number of parts by grouping parts together as one solid part and removing the unnecessary details,
+    modifying the names of the parts to simple ones, and deleting material properties were helpful and needed. However, some of these processes were irreversible, 
+    hence they might reduce the fidelity of the model drastically because of the abstractions through the process.
 
-    Lastly, there was a significant difference in data loss, due to the quality of file converters, Blender and Embedded Omniverse Converter, when the conversion of the .fbx file to a .usd file was wanted. Hence, before putting the .fbx file directly into the omniverse, putting it into the blender and modifying there,  gives a better conversion of .fbx to .usd as well as gives more flexibility to manipulate the corrupted data which occurs during the conversion to .fbx file from .step file.
+    Further observations showed that, during the modeling process, non-conventional ways, such as modeling electric cables as 3D in CAD, increased the 
+    overall fidelity of the DTP and DTI.
+
+    Lastly, instead of directly importing the .fbx file directly into the Omniverse, prior to the conversion of the .fbx file to a .usd file, 
+    importing the .fbx file into the Blender and making modifications, gave overall better conversion results. This additional process provided more flexibility to manipulate or even correct 
+    the corrupted data which occurred during the conversion to .fbx file from .step file in. Fusion 360.
 
     \subsection{Observations while creating a real system}
 
-    First, the assembly time of the real system according to the digital model, dramatically decreased, due to the provided spatial and visual data from the digital model, especially the cabling between the RPI and the breadboard. 
+    First, the assembly time of the real system, with the spatial and visual data and information from the DTP. The high-fidelity representation of the components and their connections resulted in a more efficient and flowing assembly process.  If more information about these connections and components would be exploited, in the area of complex systems,  for sure it will result in a much more efficient process relative to the traditional methods which lack this kind of information. 
 
-    Also the safety of components, during the assembly, also increased, which prevented common mistakes such as giving higher voltage to GPIO pins, which could result in damaging the RPI, was prevented. 
+    Furthermore, the utilization of the DTP contributed to the safety of components, during the assembly process and effectively prevented common mistakes. For example, using the exact spatial information of jumper cables from the DTP, prevented the unwanted application of 5V  voltage to GPIO pins through the ultrasonic sensor. This information from the DTP, significantly reduced the possibility of damaging the hardware, in this case, the RPI4. 
 
-    \subsection{Observation while creating a DTI}
+    \subsection{Observation while creating and operating the DTI}
 
-    The evolvability of the DTP is important, which reduces the development time of the DTI drasticaly. For example, pre-defined interfaces while developing the DTP, would be really helpful to develop the DTI. In ideal case, the whole DTP could be used as a template, if the DTP is adjustable, hence evolvable. 
+    The evolvability of the DTP was important because it dramatically reduced the development time of the DTI. For example, pre-defined interfaces within the ROS2 (as publishers and subscribers) nodes while developing the DTP, 
+    were helpful to develop the DTI. In the ideal case, the whole DTP could be used as a template, and each copy of the DTP could be converted directly to the unique DTI.
 
-    \subsection{Observation while operating the DTI}
+    It should be noted that ROS2 played a significant role in the development of flexible DTP and DTI. The nature of  ROS2 allowed for the creation of new nodes with unique functionalities, 
+    enabling them to publish and subscribe to messages through the selected topics. For example, the behavior of the Red and Blue LEDs was written in one node and published data to the DTP via 
+    the ROS2 bridge to imitate the LED lamp within the DTE. Later, the same node was used to manipulate the GPIO pins of the RPI4. RPI4 GPIO pins subscribed to the topic, which 
+    LED node was publishing on, resulted in putting the GPIO pins in high or low status. This status was later twinned again with the same node in the DTI. 
+    This process allowed the same node to publish and subscribe to the required data for the DTP and the DTI at the same time uncoupled and in real-time. 
 
-    Even though, the behavior of the LEDs were correctly twinned, the other information about the LEDs such as spatial data was missing which resulted in incorrect ideal twinning process. For example, removing the LED from the circuit was not presented in the digital twin instance. For this representation, it was not an issue, because in the requirements of the DTI and DTP that was not a required statement, however for the industrial applications it should be considered, and can be done with the machine vision. 
+    In conclusion, digital twins as a notion, is a powerful tool or rather approach to support and potentially replace the lifecycle stages of the RS, 
+    leading to exchange the needed material, energy, and time by using the elucidated information by the digital twins. Furthermore, 
+    by utilizing the new and agile technologies, such as machine learning, IoT, VR/AR, robotics, and automation, the information about the product can be exploited even in much more depth. 
+    This deeper exploitation of information can open up the possibility for significant enhancements of the DTP's and DTI's in the near future. 
 
-    \section{Conclusion}
-
-    Digital twins as a notion, a powerful tool or rather approach to support(or even replace) the lifecycle stages of the product, which helps to reduce the needed material, energy, and time by using the information, which is acquired by the digital twin of the product. 
-
-    With the help of new technologies and approaches, such as machine learning, IoT, VR/AR, Robotics, and Automation,  the information about the product can be exploited even in much more depth, which results in better DTP's and DTI's. However, until today, there isn't a standardized framework, which shows how this exploitation should be handled. Such challenges, Cybersecurity, data integration, model accuracy, and model calibration are adding up to the standardization problem. Consequently, more research and development should be made for the digital twins, to implement and trade the information with the needed material, energy, and time. 
-
-    Questions such as Is the DTI just the evolution of the DTP or is it another entity?, How can the quality of the DTI's as well as DTP's be qualified? Is the lifecycle of the product can be fully replaceable by the DTI and DTP? How to standardize the DTP and DTI? What is the lifecycle of the DTI and DTP?  can be researched further.
     \bibliography{main}
     \bibliographystyle{plain}
     

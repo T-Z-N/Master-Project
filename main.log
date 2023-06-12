@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.27)  12 JUN 2023 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.27)  12 JUN 2023 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -299,52 +299,51 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 
 ]
-<./images//LIFECYCLE.png, id=154, 1573.88pt x 1127.21124pt>
+<./images//LIFECYCLE.png, id=145, 1573.88pt x 1127.21124pt>
 File: ./images//LIFECYCLE.png Graphic file (type png)
 <use ./images//LIFECYCLE.png>
-Package pdftex.def Info: ./images//LIFECYCLE.png  used on input line 84.
+Package pdftex.def Info: ./images//LIFECYCLE.png  used on input line 83.
 (pdftex.def)             Requested size: 232.19843pt x 166.28801pt.
- [2 <./images//LIFECYCLE.png>]
-<./images//Requirements.png, id=167, 1755.55875pt x 1130.2225pt>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 129.
+ (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 129.
+ (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2 <./images//LIFECYCLE.png>]
+<./images//Requirements.png, id=158, 1755.55875pt x 1130.2225pt>
 File: ./images//Requirements.png Graphic file (type png)
 <use ./images//Requirements.png>
-Package pdftex.def Info: ./images//Requirements.png  used on input line 142.
-(pdftex.def)             Requested size: 283.80157pt x 182.70184pt.
+Package pdftex.def Info: ./images//Requirements.png  used on input line 157.
+(pdftex.def)             Requested size: 258.0pt x 166.09415pt.
 
-Overfull \hbox (31.80157pt too wide) in paragraph at lines 142--145
+Overfull \hbox (6.0pt too wide) in paragraph at lines 157--158
+ [][] 
+ []
+
+<./images//Left.png, id=159, 833.1125pt x 832.10875pt>
+File: ./images//Left.png Graphic file (type png)
+<use ./images//Left.png>
+Package pdftex.def Info: ./images//Left.png  used on input line 195.
+(pdftex.def)             Requested size: 258.0pt x 257.6844pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 195--198
  [][] 
  []
 
 [3 <./images//Requirements.png>]
-<./images//Left.png, id=175, 833.1125pt x 832.10875pt>
-File: ./images//Left.png Graphic file (type png)
-<use ./images//Left.png>
-Package pdftex.def Info: ./images//Left.png  used on input line 188.
-(pdftex.def)             Requested size: 258.0pt x 257.6844pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 188--191
- [][] 
- []
-
-<./images//Assembled.jpg, id=176, 1606.0pt x 1204.5pt>
+<./images//Assembled.jpg, id=168, 1606.0pt x 1204.5pt>
 File: ./images//Assembled.jpg Graphic file (type jpg)
 <use ./images//Assembled.jpg>
-Package pdftex.def Info: ./images//Assembled.jpg  used on input line 203.
+Package pdftex.def Info: ./images//Assembled.jpg  used on input line 212.
 (pdftex.def)             Requested size: 258.0pt x 193.49586pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 203--206
+Overfull \hbox (6.0pt too wide) in paragraph at lines 212--215
  [][] 
  []
 
 [4 <./images//Left.png> <./images//Assembled.jpg>] (./main.bbl
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
- (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
- (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 19.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -358,7 +357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--28
 \OT1/ptm/m/n/8 face it with ar-duino.  [][]$https : / / lastminuteengineers . com /
  []
 
-[5])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -370,25 +369,23 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (./main.aux)
+[5] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E1B9343791DF3395FF2873532772CCF1;3779.
+(rerunfilecheck)             Checksum: 70EEBC7D75FA7EBEF20E9A751475B7DD;3405.
  ) 
 Here is how much of TeX's memory you used:
- 9303 strings out of 474971
- 151811 string characters out of 5780120
- 518617 words of memory out of 5000000
- 30628 multiletter control sequences out of 15000+600000
- 503821 words of font info for 93 fonts, out of 8000000 for 9000
+ 9300 strings out of 474971
+ 151758 string characters out of 5780120
+ 518297 words of memory out of 5000000
+ 30626 multiletter control sequences out of 15000+600000
+ 506652 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,863b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,8n,77p,577b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 1204654 bytes).
+Output written on main.pdf (5 pages, 1203745 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
