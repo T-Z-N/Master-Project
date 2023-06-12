@@ -69,15 +69,14 @@
     Therefore, it was important to recognize the DTP and DTI's lifecycles, which most of the time run in parallel with the product lifecycle.
 
     Therefore, the author explored different lifecycle frameworks and standards~\cite{ISO/IEC/IEEE12207,ISO/IEC/IEEE15288,ISO/IEC/IEEE24748-1:2018} and adapted the lifecycle models 
-    from ISO/IEC 24748-1 to the notion of digital twins. 
-    These frameworks include the stages of  Concept, Development, Support\&Maintenance, and finally Retirement~\cite{ISO/IEC/IEEE24748-1:2018}. 
+    from ISO/IEC 24748-1 to the notion of digital twins(Figure~\ref{fig:LIFECYCLE}). 
+    These frameworks include the stages of  Concept, Development, Support\&Maintenance, and finally Retirement~\cite{ISO/IEC/IEEE24748-1:2018}(Figure~\ref{fig:LIFECYCLE}). 
     However, to effectively demonstrate the construction of the digital twins, the author presented the creation of the DTP and DTI from the perspective of the real system's lifecycle stages. 
-    This approach involved an additional stage called production, which includes the process of production of the RS~\cite{ISO/IEC/IEEE24748-1:2018}.
+    This approach involved an additional stage called production, which includes the process of production of the RS~\cite{ISO/IEC/IEEE24748-1:2018}(Figure~\ref{fig:LIFECYCLE}).
 
     It should be noted that, in the ideal world, there would be no need for a development or a concept phase 
     for the RS. However, currently, it is not yet feasible to completely digitalize every aspect of the real system, 
     hence DTI and DTP were used to assist the RS through its lifecycle by transforming atoms to bits~\cite{BeingDigital}.
-
 
     \begin{figure}[htbp]
         \centering
@@ -85,9 +84,6 @@
         \caption{All three lifecycles of RS, DTP, and DTI have been illustrated in order with three different colours.}\label{fig:LIFECYCLE}
     \end{figure}
     
-    It should be noted that, in the ideal world, there would be no need for a development or a concept phase for the RS. However, currently, it is not yet feasible to completely digitalize every aspect of the real system,
-    hence  DTI and DTP were used to assist the RS through its lifecycle by transforming atoms to bits /ref.
-
     \subsection{Concept Stage}
     This stage was responsible for exploration, fact-finding, and initial planning while considering the economic, technical, and strategic aspects of the system, in alignment with the desires of the stakeholders. 
     
@@ -122,13 +118,7 @@
 
     \section{Implementation}\label{section:implementation}
 
-    By following the lifecycle framework in Methods, the author ended up using several hardware and software to conceptualize, develop, produce, operate, and retire the RS along with the DTI and DTP.
-
-    First, in the concept stage the requirements were gathered, listed finally categorized into three different groups. Second these requirements were revised and elicitated into more requirements before the development stage. 
-    In the development stage, these requirements were fulfilled with selected software and hardware, and the real system was developed digitally, and later integrated within the Omniverse. Next digital twin prototype behavior is written with C++ along with the Robot Operating System Nodes as a ROS2 Package. These nodes were connected to the DTE with the ROS2 Bridge, hence the behavior of the digital twin prototype against the requirements was tested, validated, and verified. 
-    In the production stage, the real system was successfully assembled in the observable environment according to the digital twin prototype. Next, the digital twin prototype was copied and developed further,  to make a seamless connection between the digital twin instance and a real system. After the development of the digital twin instance was finished, the connection between the real system and the digital twin instance was tested. 
-    In the support \& maintenance stage, the behavior of the real system and digital twin instance is observed by the individuals, which resulted in great feedback, which proved subjectively, the seamless connection between the real system and digital twin instance with required fidelity. 
-    After the observations, the system got into the retirement stage, and the digital twin instance and later digital twin prototype were retired.
+    By following the lifecycle framework in Methods, the author ended up using various hardware and software tools to conceptualize, develop, produce, operate, and retire the RS along with the DTI and DTP.
 
     \subsection{Implementation of the Concept Stage}
     For the concept stage, first, the author focused on the requirement analysis and gathered all the requirements for the possible system. Software such as Obsidian along with the Excalidraw community plugin was used to conceptualize the systems and most importantly 
