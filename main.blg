@@ -15,48 +15,49 @@ Warning--to sort, need author or key in Omniverse
 Warning--to sort, need author or key in ROS2
 Warning--to sort, need author or key in HCSR04
 Warning--to sort, need author or key in RPI4
+Warning--to sort, need author or key in GrabCAD
 Warning--empty chapter and pages in TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles
 Warning--empty publisher in TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles
 Warning--empty year in TheDigitalTwinParadigmforFutureNASAandUSAirForceVehicles
-You've used 28 entries,
+You've used 29 entries,
             2118 wiz_defined-function locations,
-            651 strings with 8945 characters,
-and the built_in function-call counts, 6966 in all, are:
-= -- 664
-> -- 278
+            656 strings with 9084 characters,
+and the built_in function-call counts, 7134 in all, are:
+= -- 681
+> -- 279
 < -- 1
-+ -- 121
++ -- 122
 - -- 90
-* -- 413
-:= -- 1109
-add.period$ -- 85
-call.type$ -- 28
-change.case$ -- 129
+* -- 418
+:= -- 1128
+add.period$ -- 88
+call.type$ -- 29
+change.case$ -- 132
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 261
-empty$ -- 643
+cite$ -- 45
+duplicate$ -- 268
+empty$ -- 666
 format.name$ -- 90
-if$ -- 1507
+if$ -- 1549
 int.to.chr$ -- 0
-int.to.str$ -- 28
+int.to.str$ -- 29
 missing$ -- 16
-newline$ -- 144
+newline$ -- 149
 num.names$ -- 32
-pop$ -- 212
+pop$ -- 222
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 103
 quote$ -- 0
-skip$ -- 170
+skip$ -- 175
 stack$ -- 0
-substring$ -- 293
-swap$ -- 31
+substring$ -- 298
+swap$ -- 32
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 106
-warning$ -- 15
+type$ -- 110
+warning$ -- 16
 while$ -- 41
-width$ -- 30
-write$ -- 283
-(There were 15 warnings)
+width$ -- 31
+write$ -- 292
+(There were 16 warnings)
